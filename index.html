@@ -3,14 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Sedona</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<div class="main-container">
 <!-- logo and nav menu -->
 		<header class="main-header">
 			<a class="logo" href="index.html">
-				<img src="logo-index" alt="logo-sedona" width="140" height="70">
+				<img src="img/logo-sedona.svg" alt="logo-sedona" width="138" height="70">
 			</a>
 			<nav class="main-menu">
 				<ul>
@@ -24,7 +24,7 @@
 <!-- main banner -->		
 		
 			<div class="main-image">
-				<img src="sedona-welcome.png" alt="Sedona" width="1200" height="800">
+				<img src="img/sedona-welcome.jpg" alt="Sedona" width="1200" height="570">
 			</div>
 		</header>
 		<main>
@@ -39,26 +39,26 @@
 					<p>Седона - не аттракцион для туристов, здесь течет своя жизнь</p>
 				</div>
 				<div class="feature-img">
-					<img src="sedona-feature-right" alt="sedona-right" width="800" height="200">
+					<img src="img/sedona-feature-right.jpg" alt="sedona-right" width="800" height="256">
 				</div>
 			</div>
-			<div class="features-row clearfix">
+			<div class="features-row">
 				<div class="features-content">
-					<h2 class="features-title features-house">Жилье</h2>
+					<h2 class="features-title-house">Жилье</h2>
 					<p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
 				</div>
 				<div class="features-content">
-					<h2 class="features-title features-food">Еда</h2>
+					<h2 class="features-title-food">Еда</h2>
 					<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 				</div>
 				<div class="features-content">
-					<h2 class="features-title features-present">Сувениры</h2>
+					<h2 class="features-title-present">Сувениры</h2>
 					<p>Не только китайского,но и местного производства!</p>
 				</div>
 			</div>
 			<div class="second-feature">
 				<div class="feature-bridge-img">
-					<img src="sedona-feature-left" alt="sedona-left" width="800" height="200">
+					<img src="img/sedona-feature-left.jpg" alt="sedona-left" width="800" height="256">
 				</div>
 				<div class="feature-bridge">
 					<h2>Там есть мост дьявола</h2>
@@ -66,7 +66,7 @@
 					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 				</div>
 			</div>
-			<div class="sedona-features-second-row clearfix">
+			<div class="sedona-features-second-row">
 				<div class="features-content">
 					<h2 class="features-title">Небольшая площадь</h2>
 					<span class="features-number">- №3 -</span>
@@ -84,64 +84,65 @@
 				</div>
 			</div>
 			<div class="choose-hotel">
-        		<h2>Заинтересовались?</h2>
 				<p>Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        		<a class="search-hotel" href="#">Поиск гостиницы в Седоне</a>
-	        	<div class="choose-hotel">
-          			<form class="form" action="/search" method="post">
-            			<fieldset class="form-row">
-              				<label class="form-label" for="check-in">Дата заезда:</label>
-              				<input class="form-input-date" type="date" name="check-in" id="check-in" value="2016-04-24">
-              				<span class="icon-calendar"></span>
-            			</fieldset>
-	            		<fieldset class="form-row">
-             				<label class="form-label" for="check-out">Дата выезда:</label>
-              				<input class="form-input-date" type="date" name="check-out" id="check-out" value="2016-07-04">
-              				<span class="icon-calendar"></span>
-           				</fieldset>
-	            		<fieldset class="counter form-row">
-    	        			<fieldset class="counter">
-                				<label class="form-label" for="counter-adult">Взрослые:</label>
-                				<button class="icon-minus" type="button" tabindex="-1"></button>
-                				<input class="form-input-counter" type="text" name="counter-adult" id="counter-adult" value="2">
-                				<button class="icon-plus" type="button" tabindex="-1"></button>
-              				</fieldset>
-              				<fieldset class="counter">
-                				<label class="form-label" for="counter-children">Дети:</label>
-                				<button class="icon-minus" type="button" tabindex="-1"></button>
-                				<input class="form-input-counter" type="text" name="counter-children" id="counter-children" value="0">
-                				<button class="icon-plus" type="button" tabindex="-1"></button>
-              				</fieldset>
-            			</fieldset>
-           				<input class="btn" type="submit" value="Найти">
-           			</form>
-           		</div>
-           	</div>
-       	</main>
-       	<footer class="main-footer">
-       		<div class="map">
-       			<img src="map-sedona.jpg" alt="map-sedona" width="1200" height="3250">
-       		</div>
-       		<div class="footer-hashtag column">
-          		<a href="#">#visitsedona</a>
-        	</div>
-        	<div class="footer-social column">
-          		<ul>
-            		<li>
-            			<a class="social-btn social-btn-twitter" href="#">Twitter</a>
-            		</li>
-            		<li>
-            			<a class="social-btn social-btn-facebook" href="#">Facebook</a>
-            		</li>
-           			<li>
-           				<a class="social-btn social-btn-youtube" href="#">Youtube</a>
-           			</li>
-          		</ul>
-        	</div>
-        	<div class="footer-copyright column">
-          		<span>website by</span>
-          		<a class="logo-htmlacademy" href="https://htmlacademy.ru/">logo-html-academy</a>
-        	</div>
-       	</footer>
-    </div>
+				<a class="search-hotel" href="#">Поиск гостиницы в Седоне</a>
+				<div class="choose-hotel">
+					<form class="form" action="/search" method="post">
+						<fieldset class="form-row">
+							<label class="form-label" for="check-in">Дата заезда:</label>
+							<input class="form-input-date" type="date" name="check-in" id="check-in" value="2016-04-24">
+							<span class="icon-calendar"></span>
+						</fieldset>
+						<fieldset class="form-row">
+							<label class="form-label" for="check-out">Дата выезда:</label>
+							<input class="form-input-date" type="date" name="check-out" id="check-out" value="2016-07-04">
+							<span class="icon-calendar"></span>
+						</fieldset>
+						<fieldset class="counter form-row">
+							<fieldset class="counter">
+								<label class="form-label" for="counter-adult">Взрослые:</label>
+								<button class="icon-minus" type="button" tabindex="-1"></button>
+								<input class="form-input-counter" type="text" name="counter-adult" id="counter-adult" value="2">
+								<button class="icon-plus" type="button" tabindex="-1"></button>
+							</fieldset>
+							<fieldset class="counter">
+								<label class="form-label" for="counter-children">Дети:</label>
+								<button class="icon-minus" type="button" tabindex="-1"></button>
+								<input class="form-input-counter" type="text" name="counter-children" id="counter-children" value="0">
+								<button class="icon-plus" type="button" tabindex="-1"></button>
+							</fieldset>
+						</fieldset>
+						<input class="btn" type="submit" value="Найти">
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="main-footer">
+			<div class="map">
+				<img src="img/map-sedona.jpg" alt="map-sedona" width="1200" height="593">
+			</div>
+			<div class="contacts">
+				<div class="footer-hashtag column">
+					<a href="#">#visitsedona</a>
+				</div>
+				<div class="footer-social column">
+					<ul>
+						<li>
+							<a class="social-btn social-btn-twitter" href="#"><img src="img/twitter.png" alt="Twitter"></a>
+						</li>
+						<li>
+							<a class="social-btn social-btn-facebook" href="#"><img src="img/fb.png" alt="Facebook"></a>
+						</li>
+						<li>
+							<a class="social-btn social-btn-youtube" href="#"><img src="img/youtube.png" alt="Youtube"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-copyright column">
+					<span>website by</span>
+					<a class="logo-htmlacademy" href="https://htmlacademy.ru/">logo-html-academy</a>
+				</div>
+			</div>
+		</footer>
+	</div>
 </body>
