@@ -88,31 +88,25 @@
 				<a class="search-hotel" href="#">Поиск гостиницы в Седоне</a>
 				<div class="choose-hotel">
 					<form class="form" action="/search" method="post">
-						<fieldset class="form-row">
 							<label class="form-label" for="check-in">Дата заезда:</label>
 							<input class="form-input-date" type="date" name="check-in" id="check-in" value="2016-04-24">
 							<span class="icon-calendar"></span>
-						</fieldset>
-						<fieldset class="form-row">
 							<label class="form-label" for="check-out">Дата выезда:</label>
 							<input class="form-input-date" type="date" name="check-out" id="check-out" value="2016-07-04">
 							<span class="icon-calendar"></span>
-						</fieldset>
-						<fieldset class="counter form-row">
-							<fieldset class="counter">
+							<div class="counter-adult">
 								<label class="form-label" for="counter-adult">Взрослые:</label>
 								<button class="icon-minus" type="button" tabindex="-1"></button>
 								<input class="form-input-counter" type="text" name="counter-adult" id="counter-adult" value="2">
 								<button class="icon-plus" type="button" tabindex="-1"></button>
-							</fieldset>
-							<fieldset class="counter">
-								<label class="form-label" for="counter-children">Дети:</label>
+							</div>
+							<div class="counter-kids">
+								<label class="form-label" for="counter-kids">Дети:</label>
 								<button class="icon-minus" type="button" tabindex="-1"></button>
-								<input class="form-input-counter" type="text" name="counter-children" id="counter-children" value="0">
+								<input class="form-input-counter" type="text" name="counter-children" id="counter-kids" value="0">
 								<button class="icon-plus" type="button" tabindex="-1"></button>
-							</fieldset>
-						</fieldset>
-						<input class="btn" type="submit" value="Найти">
+							</div>
+						<button class="btn" type="submit" value="Найти">
 					</form>
 				</div>
 			</div>
@@ -140,7 +134,7 @@
 				</div>
 				<div class="footer-copyright column">
 					<span>website by</span>
-					<a class="logo-htmlacademy" href="https://htmlacademy.ru/">logo-html-academy</a>
+					<a class="logo-htmlacademy" href="https://htmlacademy.ru/">/imghtml-academy.png</a>
 				</div>
 			</div>
 		</footer>
