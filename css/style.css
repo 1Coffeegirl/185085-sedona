@@ -1,13 +1,29 @@
-@font-face {
-	font-family: 'ptsans';
-	src: url('font/ptsans.woff') format('woff');
-	src: url('font/ptsans.woff2') format('woff2');
-	src: url('font/ptsansbold.woff') format('woff');
-	src: url('font/ptsansbold.woff2') format('woff2');
-}
 body {
 	font-size: 14px;
+	font-weight: normal;
 	line-height: 21px;
 	color: #000000;
-	font-family: 'ptsans';
+	font-family: 'PT Sans Regular', sans-serif;
+}
+h1 {
+	font-family: 'PT Sans Bold', sans-serif;
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: bold;
+}
+h2 {
+	font-family: 'PT Sans Bold', sans-serif;
+	font-size: 21px;
+	line-height: 21px;
+	color: #000000;
+	font-weight: bold;
+
+}
+h3 {
+	font-family: 'PT Sans Bold', sans-serif;
+	font-size: 21px;
+	line-height: 26px;
+	color: #000000;
+	font-weight: bold;
 }
