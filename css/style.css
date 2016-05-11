@@ -148,17 +148,19 @@ h3 {
 }
 .main-title p{
 	margin-bottom: 50px;
-	margin-top: 27px;
+	margin-top: 35px;
 	
 }
 
 .first-feature,
 .second-feature {
-	display: block;
 	width: 100%;
 	background-color: #81b3d2;
 	color: white;
 
+}
+.first-feature h2 {
+	color: white;
 }
 
 .first-feature .real-place {
@@ -169,15 +171,20 @@ h3 {
 .first-feature .feature-img {
 	width: 800px;
 	float: right;
+	
+}
+.first-feature img,
+.second-feature img {
 	vertical-align: bottom;
 }
-.features-row,
+
+/*.features-row,
 .features-second-row{
 	width: 100%;
 	display: block;
 	clear: both;
 
-}
+}*/
 .features-content {
 	margin: 0;
 	display: inline-block;
@@ -185,6 +192,20 @@ h3 {
 	width: 400px;
 	float: left;
 	min-height: 331px;
+	text-align: center;
+	
+}
+
+.features-content h2 {
+	padding-top: 161px;
+	margin: 0 auto;
+}
+.features-content p {
+	margin-top: 24px;
+	margin-bottom: 60px;
+}
+
+.features-second-row .features-content {
 	background: #eeeeee;
 }
 .feature-bridge {
@@ -196,7 +217,31 @@ h3 {
 	width: 800px;
 	float: left;
 }
+.feature-row {
+	
 
+}
+
+.features-title-house {
+	background: url(../img/sprites.png) no-repeat 50% 60px;
+	background-position: 0 -63px ;
+	width: 75px;
+	height: 72px;
+
+}
+.features-title-food {
+	background: url(../img/sprites.png) no-repeat 50% 62px;
+	background-position: -97px -65px ;
+	width: 74px;
+	height: 70px;
+
+}
+.features-title-present {
+	background: url(../img/sprites.png) no-repeat 50% 62px;
+	background-position: -210px -63px ;
+	width: 64px;
+	height: 76px;
+}
 .choose-hotel {
 
 }
