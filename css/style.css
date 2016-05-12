@@ -159,8 +159,25 @@ h3 {
 	color: white;
 
 }
-.first-feature h2 {
+.first-feature h2,
+.second-feature h2 {
 	color: white;
+	padding-top: 42px;
+	text-align: center;
+	padding-right: 113px;
+	padding-left: 113px;
+}
+span.features-number {
+	text-align: center;
+	
+}
+.real-place p,
+.second-feature p{
+	text-align: center;
+	padding-right: 30px;
+	padding-left: 30px;
+	margin-bottom: 0px;
+
 }
 
 .first-feature .real-place {
@@ -178,13 +195,7 @@ h3 {
 	vertical-align: bottom;
 }
 
-/*.features-row,
-.features-second-row{
-	width: 100%;
-	display: block;
-	clear: both;
 
-}*/
 .features-content {
 	margin: 0;
 	display: inline-block;
@@ -197,12 +208,18 @@ h3 {
 }
 
 .features-content h2 {
-	padding-top: 161px;
+	
 	margin: 0 auto;
+	position: relative;
+}
+.features-row h2 {
+	padding-top: 161px;
 }
 .features-content p {
 	margin-top: 24px;
 	margin-bottom: 60px;
+	margin-left: 30px;
+	margin-right: 30px;
 }
 
 .features-second-row .features-content {
@@ -222,48 +239,255 @@ h3 {
 
 }
 
-.features-title-house {
-	background: url(../img/sprites.png) no-repeat 50% 60px;
-	background-position: 0 -63px ;
-	width: 75px;
+h2.features-title-house:before {
+	content: "";
+	position: absolute;
+	background: url(../img/sprites.png) no-repeat;
+	background-position: 0 -63px ;width: 75px;
 	height: 72px;
+	top: 60px;
+}
+h2.features-title-food:before {
+	content: "";
+	position: absolute;
+	background: url(../img/sprites.png) no-repeat;
+	background-position: -97px -65px ;
+	height: 72px;
+	top: 60px;
+}
 
+h2.features-title-present:before {
+	content: "";
+	position: absolute;
+	background: url(../img/sprites.png) no-repeat;
+	background-position: -210px -63px ;
+	height: 72px;
+	top: 60px;
+}
+
+
+.features-title-house {
+	width: 74px;
+	
 }
 .features-title-food {
-	background: url(../img/sprites.png) no-repeat 50% 62px;
-	background-position: -97px -65px ;
+	
 	width: 74px;
-	height: 70px;
 
 }
 .features-title-present {
-	background: url(../img/sprites.png) no-repeat 50% 62px;
-	background-position: -210px -63px ;
+	
 	width: 64px;
-	height: 76px;
+	}
+
+.features-second-row {
+	
 }
+.features-second-row .features-content h2{
+	padding-top: 47px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 26px;
+}
+.features-second-row .features-content p {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+/******************************* форма поиска */	
 .choose-hotel {
-
+	position: relative;
+	width: 568px;
+	margin: 0 auto;
+	padding-top: 30px;
+	text-align: center;
+}
+.choose-hotel h2 {
+	margin-bottom: 30px;
+	font-size: 21px;
+	line-height: 24px;
+	
+}
+.choose-hotel p {
+	margin-bottom: 45px;
+	line-height: 24px;
+}
+.search {
+	width: 568px;
+	margin: 0 auto;
+	padding: 30px 0px;
+	font-size: 21px;
+	line-height: 26px;
+	color: #ffffff;
+	background-color: #766357;
+}
+.search-hotel {
+	width: 568px;
+	margin: 0 auto;
+	padding: 30px 0;
+	font-size: 21px;
+	line-height: 26px;
+	color: #ffffff;
+	background: #766357;
+	cursor: pointer;
+}
+.choose-hotel-form {
+	position: absolute;
+	top: 100%;
+	z-index: 5;
+	width: 568px;
+	margin: 0 auto;
+	padding: 55px;
+	font-size: inherit;
+	line-height: 26px;
+	box-sizing: border-box;
+	box-shadow: 0 7px 7px 3px rgba(0, 1, 1, 0.1);
+	background: #ffffff;
+}
+.schedule {
+	position: relative;
+	padding-bottom: 30px;
+}
+.schedule label {
+	margin-right: 20px;
+	font-weight: bold;
+	margin-left: 0;
+}
+.form-input-date[type="text"] {
+	width: 340px;
+	height: 38px;
+	font-size: 14px;
+	font-family: inherit;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 26px;
+	padding: 0 13px;
+	padding-right: 35px;
+	box-sizing: border-box;
+	border: none;
+	background-color: #f2f2f2;
+}
+.schedule icon {
+	position: absolute;
+	bottom: 37px;
+	right: 10px;
+	font-size: 21px;
+	line-height: 26px;
+}
+.icon-calendar::before {
+	color: #c2c2c2;
 }
 
+.people {
+	position: relative;
+	padding-bottom: 30px;
+}
+.people label {
+	margin-right: 20px;
+	font-weight: bold;
+}
+.people .icon {
+	position: absolute;
+	bottom: 37px;
+	right: 10px;
+	font-size: 21px;
+	line-height: 26px;
+}
+.counter-adult {
+	float: left;
+	width: 229px;
+}
+.counter-kids {
+	float: right;
+}
+.counter-adult .btn,
+.counter-kids .btn {
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	margin: 0 -4px;
+	font-size: 14px;
+	line-height: 38px;
+	color: #a9a9a9;
+	vertical-align: middle;
+	background-color: #f2f2f2; 
+}
+.form-input-counter {
+	width: 37px;
+	height: 38px;
+	padding-left: 14px;
+	font: inherit;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 38px;
+	box-sizing: border-box;
+	vertical-align: middle;
+	color: #000000;
+	background-color: #f2f2f2;
+}
+.choose-hotel input[type="submit"] {
+	width: 100%;
+	margin-top: 25px;
+	padding: 15px 0;
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: bold;
+	color: #ffffff;
+	background-color: #81b3d2;
+	border: none;
+}
+
+.map {
+	width: 1200px;
+	height: 593px;
+	background: green url(../img/map-sedona.jpg) no-repeat;
+}
 /* ПОДВАЛ */
 
 .main-footer {
+	position: absolute;
+	width: 100%;
 	background: rgba(255, 255, 255, 0.9);
 	color: #000000;
-	
-
-}
-.main-footer .contacts {
-	margin: 0 72px;
-}
-.main-footer.column {
-	background-color: #fefefe;
-}
-.main-footer .footer-social {
-	
 }
 
+.main-footer .column {
+	position: relative;
+	width: 33.33%;
+	float: left;
+	margin: 0;
+	text-align: center;
+}
+.footer-hashtag {
+	font-size: 21px;
+	font-weight: bold;
+	padding-right: 0px;
+	
+}
+.footer-hashtag a {
+	text-decoration: none;
+	vertical-align: middle;
+	color: #000000;
+	margin-top: 50px;
+}
+
+.footer-social {
+	display: inline-block;
+	vertical-align: top;
+	width: 46px;
+	height: 48px;
+	font-size: 0px;
+	background-color: #81b3d2;
+	text-align: center;
+}
+
+.footer-copyrigt span {
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 8px;
+	padding-right: 115px;
+	line-height: 26px;
+}
 
 /* hotels page */
 
@@ -272,7 +496,7 @@ h3 {
 	background: purple url('../img/filter-background.jpg') no-repeat 50% -56px;
 	min-height: 217px;
 	margin: 0;
-  	color: white;
+	color: white;
  }
 .filters form {
 	width: 1060px;
