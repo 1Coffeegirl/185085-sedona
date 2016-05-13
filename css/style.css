@@ -152,7 +152,10 @@ h3 {
 
 }
 .main-title h1 {
+	font-size: 21px;
 	line-height: 26px;
+	padding-left: 100px;
+	padding-right: 100px;
 }
 .main-title p{
 	margin-bottom: 50px;
@@ -180,6 +183,7 @@ h3 {
 	padding-right: 30px;
 	padding-left: 30px;
 	margin-bottom: 0px;
+	padding-top: 12px;
 
 }
 
