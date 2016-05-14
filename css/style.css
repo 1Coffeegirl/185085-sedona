@@ -509,19 +509,29 @@ h2.features-title-present:before {
 
 .social-btn {
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: top;
 	width: 46px;
 	height: 48px;
 	margin-right: 6px;
 	font-size: 0;
 	position: relative;
 	background-color: #81b3d2;
+	background-opacity: 0.6;
+	position: relative;
+	color: #ffffff;
+	text-align: center;
+
 }
-.social-btn:hover {
-	background-color: purple;
+.social-btn span {
+	font-size: 19px;
+	line-height: 48px;
+	
+}
+.social-btn:hover span {
+	background-opacity: 1;
 }
 .footer-hashtag a:hover {
-	color: purple;
+	
 }
 .footer-copyright {
 	float: right;
