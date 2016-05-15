@@ -41,7 +41,7 @@
 					<label for="motel">Мотель</label></br>
 					<input type="checkbox" name="apartments" id="apartments" checked>
 					<label for="apartments">Апартаменты</label>
-				</div class="accomodation">
+				</div>
 				<div class="price">
 					<div class="filter-range">
 						<div class="filter-range-title">Стоимость в сутки (р):</div>
@@ -57,26 +57,28 @@
 							<div class="range-toggle range-toggle-max"></div>
 						</div>
 						</div>
-					</div>
-					
 					<button class="btn-transparent" type="submit">Показать</button>
 				</div>
 			</form>
 		</div>
 		<section class="sort">
-			<span class="found">Найдено: 3</span>
-			<span class="sort-by">Сортировка:</span>
-			<ul>
-				<li>
-					<a class="active">По цене</a>
-				</li>
-				<li>
-					<a href="#">По типу</a>
-				</li>
-				<li>
-					<a href="#">По рейтингу</a>
-				</li>
-			</ul>
+			<div class="found">
+				<span>Найдено: 3</span>
+				<span class="sort-by">Сортировка:</span>
+			</div>
+			<div class="sort-type">
+				<ul>
+					<li>
+						<a class="active">По цене</a>
+					</li>
+					<li>
+						<a href="#">По типу</a>
+					</li>
+					<li>
+						<a href="#">По рейтингу</a>
+					</li>
+				</ul>
+			</div>
 			<div class="order">
 				<div class="low-first"></div>
 				<div class="high-first"></div>
@@ -84,19 +86,17 @@
 		</section>
 		<article class="hotel clearfix">
 			<img class="hotel-picture" src="img/amara-resort-spa.jpg" alt="amara-resort-spa" width="135" height="90">
-			<div class="hotel-name">
-				<h3><a href="#">Amara Resort & Spa</a></h3>
-			</div>
-			
+			<div class="hotel-description">
+				<h3><a class="hotel-name" href="#">Amara Resort & Spa</a></h3>
 				<span class="hotel-type">Гостиница</span>
-			
-			<div class="hotel-price">
-				<span>От 3500 р.</span>
+				<span class="hotel-price">От 3500 р.</span>
 			</div>
+			<div class="hotel-buttons">
 				<a class="about-hotel clearfix" href="#">Подробнее</a>
-			<a class="book-hotel" href="#">Забронировать</a>
+				<a class="book-hotel" href="#">Забронировать</a>
+			</div>
 			<div class="hotel-rating">
-				<div class="icon-star">
+				<div class="stars">
 					<b class="icon-star"></b>
 					<b class="icon-star"></b>
 					<b class="icon-star"></b>
@@ -107,17 +107,15 @@
 		</article>
 		<article class="hotel clearfix">
 			<img class="hotel-picture" src="img/desert-quail-inn.jpg" alt="desert-quail-inn" width="135" height="90">
-			<div class="hotel-name">
-				<h3><a href="#">Desert quail inn</a></h3>
+			<div class="hotel-description">
+				<h3><a class="hotel-name" href="#">Desert quail inn</a></h3>
+				<span class="hotel-type">Мотель</span>
+				<span class="hotel-price">От 2000 р.</span>
 			</div>
-			<div class="hotel-type">
-				<span>Мотель</span>
+			<div class="hotel-buttons">
+				<a class="about-hotel clearfix" href="#">Подробнее</a>
+				<a class="book-hotel" href="#">Забронировать</a>
 			</div>
-			<div class="hotel-price">
-				<span>От 2000 р.</span>
-			</div>
-			<a class="about-hotel clearfix" href="#">Подробнее</a>
-			<a class="book-hotel" href="#">Забронировать</a>
 			<div class="hotel-rating">
 				<div class="stars">
 					<b class="icon-star"></b>
@@ -128,23 +126,21 @@
 		</article>
 		<article class="hotel clearfix">
 			<img class="hotel-picture" src="img/villas-at-poco-diablo.jpg" alt="villas-poco-diablo" width="135" height="90">
-			<div class="hotel-name">
-				<h3><a href="#">Villas At Poco Diablo</a></h3>
+			<div class="hotel-description">
+				<h3><a class="hotel-name" href="#">Villas At Poco Diablo</a></h3>
+				<span class="hotel-type">Апартаменты</span>
+				<span class="hotel-price">От 4000 р.</span>
 			</div>
-			<div class="hotel-type">
-				<span>Апартаменты</span>
+			<div class="hotel-buttons">
+				<a class="about-hotel clearfix" href="#">Подробнее</a>
+				<a class="book-hotel" href="#">Забронировать</a>
 			</div>
-			<div class="hotel-price">
-				<span>От 4000 р.</span>
-			</div>
-			<a class="about-hotel clearfix" href="#">Подробнее</a>
-			<a class="book-hotel" href="#">Забронировать</a>
 			<div class="hotel-rating">
 				<div class="stars">
 					<b class="icon-star"></b>
 					<b class="icon-star"></b>
 					<b class="icon-star"></b>
-				</iv>
+				</div>
 				<span class="rating">Рейтинг: 9.2</span>
 			</div>
 		</article>
@@ -167,8 +163,9 @@
 					</ul>
 				</div>
 				<div class="footer-copyright column">
-					<span class="copyright">website by</span>
-					<a href="https://htmlacademy.ru/"></a>
+					<a href="https://htmlacademy.ru/">
+						<span class="copyright">website by</span>
+					</a>
 				</div>
 			</div>
 		</footer>
