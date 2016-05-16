@@ -76,6 +76,11 @@ h3 {
 	display: table;
 	clear: both;
 }
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
 
 /* СЕТКА */
 .main-container {
@@ -262,6 +267,9 @@ h2.features-title-house:before {
 	width: 75px;
 	height: 72px;
 	top: 60px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
 h2.features-title-food:before {
 	content: "";
@@ -271,6 +279,9 @@ h2.features-title-food:before {
 	width: 74px;
 	height: 70px;
 	top: 60px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
 
 h2.features-title-present:before {
@@ -281,22 +292,12 @@ h2.features-title-present:before {
 	width: 64px;
 	height: 76px;
 	top: 60px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
 }
 
 
-.features-title-house {
-	width: 74px;
-	
-}
-.features-title-food {
-	
-	width: 74px;
-
-}
-.features-title-present {
-	
-	width: 64px;
-	}
 
 
 .features-second-row .features-content h2{
@@ -368,8 +369,15 @@ h2.features-title-present:before {
 }
 .schedule {
 	position: relative;
-	padding-top: 5px;
+	text-align: left;
+	padding-bottom: 25px;
+}
+.schedule:first-child {
+	padding-top: 9px;
 	padding-bottom: 40px;
+}
+.schedule:last-child {
+	padding-bottom: 27px;
 }
 .schedule.form-label {
 	display: inline-block;
@@ -381,17 +389,23 @@ h2.features-title-present:before {
 	font-weight: bold;
 	margin-left: 0;
 }
+.form-label {
+	font-weight: bold;
 
+}
 .form-input-date {
+	float: right;
 	width: 287px;
 	padding-left: 10px;
 	padding-right: 40px;
 	background-color: #f2f2f2;
 	border: none;
+	height: 38px;
+	line-height: 26px;
 }
 .icon-calendar {
 	position: absolute;
-	left: 419px;
+	left: 429px;
 	top: 6px;
 	font-size: 21px;
 	line-height: 26px;
@@ -411,6 +425,8 @@ h2.features-title-present:before {
 .people {
 	position: relative;
 	padding-bottom: 23px;
+	text-align: left;
+	padding-top: 10px;
 }
 .people label {
 	margin-right: 20px;
@@ -426,9 +442,11 @@ h2.features-title-present:before {
 .counter-adult {
 	float: left;
 	width: 229px;
+	margin-right: 48px;
 }
 .counter-kids {
 	float: right;
+	text-align: right;
 }
 .counter-adult .btn,
 .counter-kids .btn {
@@ -454,6 +472,18 @@ h2.features-title-present:before {
 	vertical-align: middle;
 	color: #000000;
 	background-color: #f2f2f2;
+	border: none;
+
+}
+.icon-plus,
+.icon-minus {
+	border: 0;
+	background-color: #f2f2f2;
+	padding-left: 0;
+	padding-right: 0;
+	font-size: 14px;
+	line-height: 37px;
+
 }
 .choose-hotel input[type="submit"] {
 	width: 100%;
@@ -469,7 +499,7 @@ h2.features-title-present:before {
 
 .map {
 	width: 1200px;
-	height: 476px;
+	height: 593px;
 	background: green url(../img/map-sedona.jpg) no-repeat;
 	background-attachment: scroll;
 }
@@ -477,15 +507,24 @@ h2.features-title-present:before {
 
 .main-footer {
 	width: 1200px;
-	background: rgba(255, 255, 255, 0.9);
+	
 	color: #000000;
-	position: absolute;
+	position: relative;
 	font-size: 0;
 	
 }
-.main-footer .column {
-	display: inline-block;
+.contacts {
+	position: absolute;
+	padding-bottom: 6px;
+	padding-top: 6px;
+	width: 100%;
+	background: rgba(255, 255, 255, 0.9);
 	bottom: 0;
+
+}
+.main-footer .column {
+	width: 33,33%;
+	display: inline-block;
 	font-size: 16px;
 }
 
@@ -508,7 +547,7 @@ h2.features-title-present:before {
 .footer-social {
 	margin-top: 3px;
 	margin-right: 0;
-	text-align: center;
+	text-align: left;
 }
 .footer-social li {
 	display: inline-block;
@@ -543,7 +582,6 @@ h2.features-title-present:before {
 
 .footer-copyright {
 	float: right;
-	max-width: 240px;
 	margin-top: 40px;
 	margin-bottom: 30px;
 	text-align: center;
@@ -560,8 +598,6 @@ h2.features-title-present:before {
 	font-size: 14px;
 	text-decoration: none;
 	color: #000000;
-
-
 }
 .footer-copyright a:before {
 	content: "";
@@ -587,7 +623,7 @@ h2.features-title-present:before {
 .filters form {
 	width: 1060px;
 	margin: 0 auto;
-	padding: 30px 0;
+	padding: 30px 0 15px 0;
 }
 .filters span {
 	font-weight: bold;
@@ -597,9 +633,12 @@ h2.features-title-present:before {
 }
 .infrastructure {
 	float: left;
-	width: 240px;
-	padding-left: 12px;
+	padding-left: 5px;
+	padding-right: 98px;
 
+}
+.accomodation {
+	float: left;
 }
 .price {
 	float: right;
@@ -614,7 +653,7 @@ h2.features-title-present:before {
 	position: relative;
 	display: inline-block;
 	vertical-align: top;
-	margin: 15px 0 10px 0;
+	margin: 22px 0 12px 0;
 	padding-left: 40px;
 	cursor: pointer;
 }
@@ -644,8 +683,6 @@ h2.features-title-present:before {
 
 .filter-range {
   width: 330px;
-  margin: -163px auto; 
-
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -763,7 +800,6 @@ h2.features-title-present:before {
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
-
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -778,63 +814,105 @@ h2.features-title-present:before {
 }
 /* сортировка */
 .sort {
-	width: 1200px;
-	margin: 0 auto;
-	padding-left: 73px;
-	padding-top: 30px;
-	padding-bottom: 22px;
-
-}
-.sort-type {
-	float: left;
-}
-.sort ul {
-	list-style: none;
-	
-}
-.sort li {
-	display: inline-block;
-	vertical-align: top;
-	margin-right: 30px;
-	margin-top: 30px;
-}
-.found{
-	display: inline-block;
-	width: 126px;
-	padding-top: 30px;
-	padding-left: 70px;
-	padding-bottom: 26px;
-	padding-right: 10px;
-	font-size: 21px;
-	line-height: 26px;
-	font-weight: bold;
+	margin-top: 50px;
 }
 
-.sort .sort-by {
-	padding: 36px 10px 0 26px;
+.sort>ul>li:first-child{
+  font-weight: bold;
+  font-size: 21px;
+}
+.sort>ul>li>a{
+	color: #b2b2b2;
+	float: right;
 	font-size: 12px;
-	line-height: 18px;
-
+	font-family: "PTSans","Arial", sans-serif;
+}
+.sort>ul>li>a:hover{
+	color: #a3c7de;
+}
+.sort>ul>li>a:active{
+	color: #000000;
+}
+.sort>ul>li{
+	font-size: 12px;
+	font-family: "PTSans","Arial", sans-serif;
+}
+.sort_price>a:active{
+	color: #a3c7de;
+	border-bottom: 1px solid #000000;	
+}
+.sort-type-rating{
+	color: #c7c7c7;
+	border-bottom: 1px dashed #c7c7c7;
+}
+.sort-type-rating:hover{
+	color: #81b3d2;
+	border-bottom: 1px dashed #81b3d2;
+}
+.sort-type-rating:active{
+	color: #ffffff;
+	border-bottom: 1px dashed #ffffff;
+}
+.sort>ul>li{
+	float: left;
+	display: inline;
+	margin-left: 30px;
+	margin-bottom: 30px;
+}
+.sort>ul>li:nth-child(6){
+	float: right;
+	margin-right: 0px;
+}
+.sort>ul>li:nth-child(7){
+	float: right;
+}
+.arrow_up>a::before{
+	float: right;
+	font-family: "symbols-sedona";
+	content: "\25b2";
+	font-size: 23px;
+	line-height: 20px;
+	color: #000000;
+}
+.arrow_down>a::before{
+	float: right;
+	font-family: "symbols-sedona";
+	content: "\25bc";
+}
+.arrow_up>a:before:hover{
+	color: #ffffff;
+}
+.arrow_up>a:before:active{
+	color: #81b3d2;
 }
 
+.arrow>a{
+	display: inline-block;
+	width: 15px;
+	text-decoration: none;
+	margin-top: 5px;
+	color: #cccccc;
+	font-size: 23px;
+	line-height: 20px;
+}
+.arrow_down>a{
+	margin-right: 90px;
+}
+.arrow_up>a{
+	margin-right: -20px;
+}
 /* -------------------------hotels ---------------------------------*/
 
 .hotel {
-	width: 1060px;
+	width: 100%;
 	height: 150px;
-	margin: 0 auto;
-	padding: 0;
+	margin: 0 0;
 	color: #000000;
 	background: #fefefe;
 	border-bottom: 1px solid #e5e5e5;
-}
-.hotel:first-child {
-	border-top: 1px solid #e5e5e5;
-}
-
-.hotel-description {
-	width: 500px;
-	float: left;
+	padding-right: 73px;
+	padding-left: 73px;
+	box-sizing: border-box;
 }
 .hotel-picture {
 	float: left; 
@@ -842,6 +920,15 @@ h2.features-title-present:before {
 	margin-right: 30px;
 	margin-left: 0;
 	padding-top: 30px;
+}
+.hotel-description {
+	float: left;
+}
+.hotel-description h3 {
+	margin-top: 27px;
+	margin-bottom: 10px;
+	font-size: 21px;
+	font-weight: 26px;
 }
 .hotel-name {
 	text-decoration: none;
@@ -859,24 +946,18 @@ h2.features-title-present:before {
 	color: #eeeeee;
 }
 .hotel-type {
-	/*display: inline-block;*/
-	/*vertical-align: top;
-	width: 110px;*/
-	font-size: 14px;
-	line-height: 21px;
-	/*padding-bottom: 30px;
-	padding-left: 0;*/
-	
+	float: left;
 }
+
 .hotel-price {
-	display: inline-block;
-	vertical-align: top;
-	width: 142px;
+	float: left;
 	font-size: 14px;
-	padding-bottom: 30px;
+	padding-bottom: 14px;
+	padding-left: 40px;
 }
 .hotel-buttons {
-	margin-top: 18px;
+	
+	
 }
 
 .about-hotel {
@@ -890,8 +971,8 @@ h2.features-title-present:before {
 	line-height: 27px;
 	font-weight: bold;
 	margin-right: 10px;
-	margin-left: 170px;
 	text-align: center;
+
 }
 .book-hotel {
 	width: 142px;
@@ -906,12 +987,14 @@ h2.features-title-present:before {
 	text-align: center;
 }
 .hotel-rating {
-	position: relative;
+	
 	float: right;
 	margin-top: 12px;
 	text-align: right;
 }
 .stars {
+	margin-top: 26px;
+	margin-bottom: 45px;
 
 }
 .icon-star {
