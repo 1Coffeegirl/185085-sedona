@@ -619,7 +619,7 @@ h2.features-title-present:before {
 	min-height: 217px;
 	margin: 0;
 	color: white;
-	margin-bottom: 10px;
+	margin-bottom: 14px;
  }
 .filters form {
 	width: 1060px;
@@ -819,34 +819,58 @@ h2.features-title-present:before {
 .sort {
 	margin-top: 20px;
 }
+.sort-by {
+	float: left;
+	margin-right: 400px;
+}
+.up-down {
+	float: right;
+	text-align: right;
+}
 
-.sort>ul>li:first-child{
+.sort-by li {
+	display: inline-block;
+	text-decoration: none;
+	padding-right: 30px;
+	font-size: 14px;
+	line-height: 26px;
+}
+.up-down li {
+	display: inline-block;
+	right: 0;
+
+}
+
+.sort-by>ul>li:first-child{
   font-weight: bold;
   font-size: 21px;
+  padding-right: 50px;
+  padding-left: 35px;
 }
-.sort>ul>li>a{
+.sort-by>ul>li>a{
+	text-decoration: none;
 	color: #b2b2b2;
 	float: right;
 	font-size: 12px;
 	font-family: "PTSans","Arial", sans-serif;
+	border-bottom: 1px dashed #c7c7c7;
 }
-.sort>ul>li>a:hover{
+.sort-by>ul>li>a:hover{
 	color: #a3c7de;
 }
-.sort>ul>li>a:active{
+.sort-by>ul>li>a:active{
 	color: #000000;
 }
-.sort>ul>li{
+.sort-by>ul>li{
 	font-size: 12px;
 	font-family: 'PTSans','Arial', sans-serif;
 }
-.sort_price>a:active{
+.sort-price>a:active{
 	color: #a3c7de;
-	border-bottom: 1px solid #000000;	
 }
 .sort-type-rating{
 	color: #c7c7c7;
-	border-bottom: 1px dashed #c7c7c7;
+	
 }
 .sort-type-rating:hover{
 	color: #81b3d2;
@@ -856,17 +880,16 @@ h2.features-title-present:before {
 	color: #ffffff;
 	border-bottom: 1px dashed #ffffff;
 }
-.sort>ul>li{
+.sort-by>ul>li{
 	float: left;
 	display: inline;
-	margin-left: 30px;
 	margin-bottom: 30px;
 }
-.sort>ul>li:nth-child(6){
+.up-down>ul>li:first-child {
 	float: right;
 	margin-right: 0px;
 }
-.sort>ul>li:nth-child(7){
+.up-down>ul>li:last-child {
 	float: right;
 }
 .arrow-up>a::before{
@@ -902,10 +925,10 @@ h2.features-title-present:before {
 	line-height: 20px;
 }
 .arrow-down>a{
-	margin-right: 90px;
+	
 }
 .arrow-up>a{
-	margin-right: -20px;
+	
 }
 /* -------------------------hotels ---------------------------------*/
 
@@ -932,7 +955,7 @@ h2.features-title-present:before {
 }
 .hotel-description h3 {
 	margin-top: 27px;
-	margin-bottom: 10px;
+	margin-bottom: 7px;
 	font-size: 21px;
 	font-weight: 26px;
 }
@@ -960,10 +983,6 @@ h2.features-title-present:before {
 	font-size: 14px;
 	padding-bottom: 14px;
 	padding-left: 40px;
-}
-.hotel-buttons {
-	
-	
 }
 
 .about-hotel {
