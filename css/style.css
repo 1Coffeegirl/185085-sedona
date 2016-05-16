@@ -527,11 +527,6 @@ h2.features-title-present:before {
 	bottom: 0;
 
 }
-.main-footer .column {
-	width: 33,33%;
-	display: inline-block;
-	font-size: 16px;
-}
 
 .footer-hashtag {
 	float: left;
@@ -552,8 +547,7 @@ h2.features-title-present:before {
 
 .footer-social {
 	float: left;
-	margin-top: 3px;
-	margin-right: 195px;
+	margin-top: 35px;
 	text-align: left;
 }
 .footer-social li {
@@ -591,6 +585,8 @@ h2.features-title-present:before {
 	position: relative;
 	margin-top: 40px;
 	padding-right: 103px;
+	float: right;
+	width: 195px;
 }
 .footer-copyright span {
 	top: 5px;
@@ -853,7 +849,7 @@ h2.features-title-present:before {
 	float: right;
 	font-size: 12px;
 	font-family: "PTSans","Arial", sans-serif;
-	border-bottom: 1px dashed #c7c7c7;
+	border-bottom: 1px dotted #a3c7de;
 }
 .sort-by>ul>li>a:hover{
 	color: #a3c7de;
@@ -872,10 +868,7 @@ h2.features-title-present:before {
 	color: #c7c7c7;
 	
 }
-.sort-type-rating:hover{
-	color: #81b3d2;
-	border-bottom: 1px dashed #81b3d2;
-}
+
 .sort-type-rating:active{
 	color: #ffffff;
 	border-bottom: 1px dashed #ffffff;
